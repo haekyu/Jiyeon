@@ -10,7 +10,7 @@ for month in months:
     # Parse and save
     outputfile = './utf8/2017_%02d_utf8.csv' % month
     f_output = open(outputfile, encoding='utf-8', mode='w')
-    f_output.write('지점번호,지점,일시,기온,강수량\n')
+    f_output.write('LocNumber,Loc,Date,Temp,Prec\n')
     for th, line in enumerate(lines):
         if th < 7:
             continue
@@ -20,7 +20,7 @@ for month in months:
     # Parse and save
     outputfile = './euckr/2017_%02d_euckr.csv' % month
     f_output = open(outputfile, encoding='euc-kr', mode='w')
-    f_output.write('지점번호,지점,일시,기온,강수량\n')
+    f_output.write('LocNumber,Loc,Date,Temp,Prec\n')
     for th, line in enumerate(lines):
         if th < 7:
             continue
