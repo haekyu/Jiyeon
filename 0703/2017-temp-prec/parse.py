@@ -1,6 +1,4 @@
-months = list(range(1, 13))
-
-for month in months:
+for month in range(1, 13):
     # Read input
     inputfile = './raw/2017_%02d.csv' % month
     f_input = open(inputfile, encoding='euc-kr', mode='r')
